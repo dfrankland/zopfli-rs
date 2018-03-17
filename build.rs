@@ -37,12 +37,10 @@ fn main() {
         ])
         .header("./zopfli/src/zopfli/zopfli.h")
         .whitelist_type("ZopfliOptions")
-        .whitelist_var("ZopfliFormat")
         .whitelist_var("ZopfliFormat_ZOPFLI_FORMAT_DEFLATE")
         .whitelist_var("ZopfliFormat_ZOPFLI_FORMAT_GZIP")
         .whitelist_var("ZopfliFormat_ZOPFLI_FORMAT_ZLIB")
         .whitelist_function("ZopfliCompress")
-        .whitelist_function("ZopfliInitOptions")
         .derive_debug(true)
         .generate()
         .expect("Unable to generate bindings");
