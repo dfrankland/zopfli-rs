@@ -2,6 +2,15 @@
 name = "zopfli-rs"
 version = "0.1.0"
 authors = ["Dylan Frankland <dylan@frankland.io>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["zopfli", "encoding"]
+repository = "https://github.com/dfrankland/zopfli-rs"
+homepage = "https://github.com/dfrankland/zopfli-rs"
+description = """
+Bindings to zopfli for deflate, gzip, and zlib compression.
+"""
+categories = ["compression", "api-bindings"]
 build = "build.rs"
 
 [build-dependencies]
