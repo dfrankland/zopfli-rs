@@ -1,0 +1,12 @@
+[package]
+name = "zopfli-rs"
+version = "0.1.0"
+authors = ["Dylan Frankland <dylan@frankland.io>"]
+build = "build.rs"
+
+[build-dependencies]
+bindgen = "0.33.2"
+cc = "1.0.7"
+
+[dev-dependencies]
+flate2 = "1.0.1"
