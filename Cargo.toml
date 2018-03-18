@@ -12,6 +12,7 @@ Bindings to zopfli for deflate, gzip, and zlib compression.
 """
 categories = ["compression", "api-bindings"]
 build = "build.rs"
+exclude = ["test/*"]
 
 [build-dependencies]
 bindgen = "0.33.2"
@@ -19,3 +20,6 @@ cc = "1.0.7"
 
 [dev-dependencies]
 flate2 = "1.0.1"
+zopfli = "0.3.7"
+rand = "0.4.2"
+lazy_static = "1.0.0"
